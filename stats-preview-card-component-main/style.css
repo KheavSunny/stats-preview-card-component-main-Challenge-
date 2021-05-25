@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+
+body{
+    font-size: 15px;
+    font-family: 'Inter';
+    background-color: hsl(233, 47%, 7%);
+    color: #ffff;
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+}
+
+span{
+    color:  hsl(277, 64%, 61%);
+}
+
+.text2,
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.side2{
+    background-image: url("./images/image-header-desktop.jpg");
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.test1{
+  width: 1400px;
+  position: center;
+  background:  hsl(244, 38%, 16%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.side1{
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 8%;
+   padding-bottom: 8%;
+
+}
+
+.text{
+    margin-bottom: 10%;
+}
+
+.number{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+.bgpic{
+    background-color:hsl(277, 64%, 61%);
+    height: 600px;
+    opacity: 0.6;
+}
+
+
+@media (max-width:1400px){
+    .test1{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90vw;
+        height: 800px;
+    }
+}
+
+@media (max-width:1400px){
+    .side1{
+        width: 100%;
+        height: 66%;
+        /* padding: 40%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .side2{
+        height: 33%;
+        width: 100%;
+
+    }
+
+    .bgpic{
+        height: 100%;
+    }
+
+    .number{
+        display: flex;
+        flex-direction: column;
+    }
+}
